@@ -1,0 +1,54 @@
+Steps to deploy a release:
+
+* Update the server version in both the server and client
+1. Play test the game, at least one full game.
+2. Run AIvAI for at least 100 games.
+3. Do a build of the server: 
+
+From the project Server/java directory (where pom.xml is):
+
+> mvn clean install
+
+To skip tests:
+
+> mvn clean install -DskipTests
+
+If everything goes ok, you'll see a lot of stuff scroll by ending with a BUILD SUCCESS message. This also runs the unit tests.
+
+To execute to jar from Server/java
+
+java -jar target/galacdecks.jar &
+
+A bunch of log lines (you may see some errors related to Hibernate), followed by a netty ACTIVE message.
+
+The server should now be running locally.
+
+Play test the game against the build.
+
+4. Build the client for the target platform(s)
+
+5. For each client 
+
+
+
+
+To test, load http://localhost:8080/ (or whatever port) in your browser. You should see a WebSockets test page.
+
+Send the following JSON message to the server:
+
+{command : "testgame"}
+
+It should respond with some player tokens.
+
+To deploy to ec2:
+
+Connect to ec2 with FTP client
+Upload galacdecks.jar to /home/ec2-user (or wherever)
+Upload data directory
+
+Connect to ec2 with Putty
+Terminate existing galacdecks process, if any (ps -ax, sudo kill id#)
+
+sudo java -Xms64m -Xmx768m -jar galacdecks.jar &
+
+

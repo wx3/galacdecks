@@ -1,0 +1,9 @@
+id,name,description,cardPrefab,unitPrefab,portrait,UNIT,PLANET,MOVABLE,POWER,MAX_HEALTH,ATTACK,ENERGY_COST,MINERAL_COST,ENERGY_RESOURCE,MINERAL_RESOURCE,validator,rules
+HOMEWORLD,Homeworld,Your Homeworld provides 2 energy and 1 mineral,Default Card,Planet,earth,Y,Y,,,25,,,5,1,0,,HELLO_WORLD
+PLANET_2_ENERGY,Vega II,Extra 1 Energy per turn,Default Card,Default Unit,earth,Y,Y,,,5,,1,2,1,,,
+PLANET_2_MINERAL,Minerva,Extra 1 Mineral per turn,Default Card,Default Unit,minerva,Y,Y,,,5,,1,2,,1,,
+SHIP_FIGHTER,Strike Fighter,A small attack ship,Default Card,Default Unit,strike_fighter,Y,,Y,,3,2,1,2,,,,
+MISSILE,Missile,Deal 3 Damage to a unit,Default Card,,missile,,,,Y,,,3,,,,TARGET_UNIT,MISSILE
+SHIP_CRUISER,Cruiser,Medium combat ship,Default Card,Default Unit,cruiser,Y,,Y,,5,3,2,5,,,,
+DEFENDER,Defender Station,"Whenever attacked, deals 1 damage to attacker",Default Card,Default Unit,defender,Y,,,,4,0,2,4,,,,COUNTER_MEASURES
+VENGINE,MAD Defender,"Whenever owner's homeworld is damaged, deal 1 damage to a random enemy for each damage taken.",Default Card,Default Unit,vengine,Y,,N,,3,1,2,4,,,,VENGINE

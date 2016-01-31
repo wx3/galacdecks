@@ -1,0 +1,44 @@
+Greetings Commander, I have been assigned as your advisor.
+
+The enemy has set up an offensive station in this system and our mission is to destroy it.
+
+---
+
+Right now, we have 1 Energy and 2 Mineral resources to spend each turn.
+
+Start by placing an Ion Gun in the center of the ship. That costs 2 Mineral and will give us some fire power.
+
+
+---
+
+Excellent. Weapons need a turn to warm-up, so we can't attack yet.
+
+We still have 1 Energy remaining. We don't need to use all our resources, but any used resources can't be saved.
+
+So use our remaining energy to give that Ion Gun increased attack.
+
+--
+
+We can't play any more cards or attack, so you can end our turn now.
+
+--
+
+After each turn, we can choose an improvement: more energy each turn, more minerals each turn, or draw 2 cards.
+
+Since we just played 2 cards, let's draw 2 more.
+
+--
+
+Looks like the enemy station is preparing for a fight. Let's give 'em what for.
+
+Ship components behind other components are protected and can't be directly attacked. So let's go straight for the bridge.
+
+Drag your Ion Gun to attack a target.
+
+--
+
+Nice shot.
+
+The target is damaged, but not destroyed. To protect our Ion Cannon from their return fire, place a Reinforced Hull in front of it.
+
+

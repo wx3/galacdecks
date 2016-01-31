@@ -1,0 +1,5 @@
+id,description,trigger,script
+HELLO_WORLD,"Output ""Hello World"" to the server console at the end of each turn.",EndTurnEvent,"Debug(""Hello world!"")"
+MISSILE,Blast a unit for 3 damage,PlayCardEvent,"dealDamage(entity, event.target, 3, ""Missile Attack Event"")"
+COUNTER_MEASURES,"When attacked, deal 1 damage to attacker",AttackEvent,"if(event.target == entity){dealDamage(event.target, event.attacker, 1, ""Default Attack"")}"
+VENGINE,"Whenever owner's homeworld is damaged, deal 1 damage to a random enemy for each damage taken.",DamageTakenEvent,"if(event.victim == getHomeworld(entity.getOwner())) {Debug(""Vengeance is mine!""); for(i = 0; i < event.damage.damageTaken; i++) {enemy = getRandomEnemy(entity.getOwner());if(enemy != null) {dealDamage(entity, enemy, 1);}}}"

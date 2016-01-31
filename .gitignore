@@ -1,0 +1,16 @@
+# GalacDeck root gitignore
+
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+/3rdParty/
+/Credentials/
+/Ignore/

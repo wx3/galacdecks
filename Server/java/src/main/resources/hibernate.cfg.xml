@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ Copyright (c) 2010, Red Hat Inc. or third-party contributors as
+  ~ indicated by the @author tags or express copyright attribution
+  ~ statements applied by the authors.  All third-party contributions are
+  ~ distributed under license by Red Hat Inc.
+  ~
+  ~ This copyrighted material is made available to anyone wishing to use, modify,
+  ~ copy, or redistribute it subject to the terms and conditions of the GNU
+  ~ Lesser General Public License, as published by the Free Software Foundation.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
+  ~ for more details.
+  ~
+  ~ You should have received a copy of the GNU Lesser General Public License
+  ~ along with this distribution; if not, write to:
+  ~ Free Software Foundation, Inc. 
+  ~ 51 Franklin Street, Fifth Floor
+  ~ Boston, MA  02110-1301  USA
+  -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+    
+	    <!--  Memory DB settings -->
+	    <property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property>
+		<property name="hibernate.connection.url">jdbc:hsqldb:mem:testdb;shutdown=false</property>
+		<property name="hibernate.connection.username">sa</property>
+		<property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+		<property name="hibernate.connection.password"/>
+		
+		<!--  MySQL settings >
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/galacdeck</property>
+        <property name="connection.username">root</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.password"></property-->
+		
+		
+		
+		<property name="hibernate.connection.pool_size">10</property>
+		<property name="hibernate.connection.autocommit">true</property>
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+		
+        
+		<property name="current_session_context_class">thread</property>
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout? -->
+        <property name="show_sql">false</property>
+
+        <!-- What's the schema preservation/creation policy? -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        
+        <!-- Names the annotated entity class -->
+        <mapping class="com.wx3.galacdecks.server.User"/>
+        <mapping class="com.wx3.galacdecks.game.EntityCoordinates"/>
+        <mapping class="com.wx3.galacdecks.game.GameInstance"/>
+        <mapping class="com.wx3.galacdecks.game.GameSystem"/>
+        <mapping class="com.wx3.galacdecks.game.EntityPrototype"/>
+        <mapping class="com.wx3.galacdecks.game.EntityRule"/>
+        <mapping class="com.wx3.galacdecks.game.ValidatorScript"/>
+        <mapping class="com.wx3.galacdecks.game.PlayerInstance"/>
+        <mapping class="com.wx3.galacdecks.game.PlayerShip"/>
+        
+        <mapping class="com.wx3.galacdecks.ai.AiHint"/>
+
+    </session-factory>
+
+</hibernate-configuration>

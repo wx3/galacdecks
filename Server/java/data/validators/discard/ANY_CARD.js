@@ -1,0 +1,3 @@
+// Any card
+
+valid = true;

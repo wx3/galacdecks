@@ -1,0 +1,10 @@
+Hex impressions:
+
+Seems like kind of a long download. First download the installer, then run it and it self-installs with the normal options, then run the game and it starts downloading all the files and updates. The ETA keeps jumping around, currently it has about 2 minutes left after a couple minutes of downloading.
+
+UI looks polished, but fonts are very small.
+
+Game UI looks good, but is less intuitive than Hearthstone's drag and drop.
+
+
+First few plays were frustrating, losing every game because my mana doesn't match my units. It's not clear when to mulligan, and each mulligan is likely to leave you worse off since you can't mulligan specific cards.

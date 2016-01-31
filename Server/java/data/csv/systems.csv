@@ -1,0 +1,5 @@
+id,name,description,rootRules,usePlayerDecks,pvp
+TUTORIAL_1,Tutorial,Play me first,ROOT_TUTORIAL_1,N,
+TUTORIAL_2,Tutorial Pt 2,Play me second,ROOT_TUTORIAL_2,N,
+PVP_1,Battlegrounds,PvP,ROOT_DEFAULT_INIT,Y,Y
+HIVE,The Hive,PvE,ROOT_HIVE_INIT,N,

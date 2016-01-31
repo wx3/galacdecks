@@ -1,0 +1,3 @@
+id,description,script
+TARGET_ANYTHING,Target any coordinate,valid = true;
+TARGET_UNIT,Target must be unit,if(!target || !target.inPlay() || !target.isUnit()) {valid = false;} else {valid = true;}
